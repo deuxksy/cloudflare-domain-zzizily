@@ -1,3 +1,9 @@
+variable "tf_login_token" {
+  description = "Terrafom login token"
+  type        = string
+  sensitive   = true
+}
+
 variable "cloudflare_email" {
   description = "E-Mail"
   type        = string
