@@ -1,22 +1,22 @@
-variable "email" {
+variable "cloudflare_email" {
   description = "E-Mail"
   type        = string
   sensitive   = true
 }
 
-variable "zone_id" {
+variable "cloudflare_zone_id" {
   description = "Zone ID"
   type        = string
   sensitive   = true
 }
 
-variable "api_token" {
+variable "cloudflare_api_token" {
   description = "API Token"
   type        = string
   sensitive   = true
 }
 
-variable "domain" {
+variable "cloudflare_domain" {
   description = "Domain"
   type        = string
   sensitive   = true
