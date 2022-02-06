@@ -20,5 +20,5 @@ variable "cloudflare_domain" {
   description = "Domain"
   type        = string
   sensitive   = true
-  default = "zzizily.com"
+  default     = "zzizily.com"
 }
