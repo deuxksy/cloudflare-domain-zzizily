@@ -7,7 +7,7 @@ on: [push, pull_request]
   # pull_request:
 
 env:
-  TF_LOG: INFO
+  TF_LOG: TRACE
 
 jobs:
   terraform:
