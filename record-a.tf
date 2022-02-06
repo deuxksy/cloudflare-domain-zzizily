@@ -6,11 +6,10 @@ resource "cloudflare_record" "local" {
   # allow_overwrite = true
 }
 
-resource "cloudflare_record" "root" {
+resource "cloudflare_record" "nlog" {
   zone_id = var.cloudflare_zone_id
-  name    = ""
-  value   = "49.161.254.154"
   type    = "A"
+  name    = "nlog"
+  value   = "125.209.214.79"
   proxied = true
-  # allow_overwrite = true
 }
