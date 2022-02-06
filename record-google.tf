@@ -5,7 +5,7 @@ resource "cloudflare_record" "_domainconnect" {
   value   = "connect.domains.google.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "blog" {
@@ -14,7 +14,7 @@ resource "cloudflare_record" "blog" {
   value   = "blog.zzizily.com.ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "calendar" {
@@ -23,7 +23,7 @@ resource "cloudflare_record" "calendar" {
   value   = "ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "drive" {
@@ -32,7 +32,7 @@ resource "cloudflare_record" "drive" {
   value   = "ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "mail" {
@@ -41,7 +41,7 @@ resource "cloudflare_record" "mail" {
   value   = "ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "sites" {
@@ -50,7 +50,7 @@ resource "cloudflare_record" "sites" {
   value   = "ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "test" {
@@ -59,7 +59,7 @@ resource "cloudflare_record" "test" {
   value   = "ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "www" {
@@ -68,6 +68,6 @@ resource "cloudflare_record" "www" {
   value   = "ghs.googlehosted.com"
   type    = "CNAME"
   proxied = true
-  # allow_overwrite = true
+  allow_overwrite = true
 }
 
