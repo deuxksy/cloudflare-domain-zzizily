@@ -5,6 +5,7 @@ resource "cloudflare_record" "mx" {
   type     = "MX"
   ttl      = 3600
   priority = 1
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "mx5-1" {
@@ -14,6 +15,7 @@ resource "cloudflare_record" "mx5-1" {
   type     = "MX"
   ttl      = 3600
   priority = 5
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "mx5-2" {
@@ -23,6 +25,7 @@ resource "cloudflare_record" "mx5-2" {
   type     = "MX"
   ttl      = 3600
   priority = 5
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "mx10-1" {
@@ -32,6 +35,7 @@ resource "cloudflare_record" "mx10-1" {
   type     = "MX"
   ttl      = 3600
   priority = 10
+  allow_overwrite = true
 }
 
 resource "cloudflare_record" "mx10-2" {
@@ -41,5 +45,5 @@ resource "cloudflare_record" "mx10-2" {
   type     = "MX"
   ttl      = 3600
   priority = 10
+  allow_overwrite = true
 }
-
