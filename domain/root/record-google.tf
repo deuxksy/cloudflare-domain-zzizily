@@ -44,6 +44,15 @@ resource "cloudflare_record" "mail" {
   allow_overwrite = true
 }
 
+resource "cloudflare_record" "dkim" {
+  zone_id         = var.cloudflare_zone_id
+  name            = "google._domainkey"
+  value           = "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxk4BaiEwa+9I1eTAkYgVm1Cand7VAO1TSoAEXs3yIUIUAuILyBU+JtOabXdc8utD8hvNv99FuPae1jcV+ny1BxymggM1oMkseoKO2jKML87rwkCde9dRuMdNfsVvi874Ugvv3/HuM5uEmY+Mreli7fAYuowZX8Biy0vhkD1MdKwIDAQAB"
+  type            = "TXT"
+  proxied         = true
+  allow_overwrite = true
+}
+
 resource "cloudflare_record" "sites" {
   zone_id         = var.cloudflare_zone_id
   name            = "sites"
