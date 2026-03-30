@@ -6,6 +6,7 @@ on:
     paths: [domain/root/**]
   pull_request:
     paths: [domain/root/**]
+  workflow_dispatch:
 
 concurrency:
   group: tofu-${{ github.ref }}
