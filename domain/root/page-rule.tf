@@ -4,8 +4,8 @@ resource "cloudflare_page_rule" "page_urle_1" {
   status   = "active"
   priority = 1
 
-  actions {
-    forwarding_url {
+  actions = {
+    forwarding_url = {
       url         = "https://github.com/deuxksy"
       status_code = 301
     }
