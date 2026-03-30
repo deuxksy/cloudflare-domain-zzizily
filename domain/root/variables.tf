@@ -1,9 +1,3 @@
-variable "cloudflare_email" {
-  description = "E-Mail"
-  type        = string
-  sensitive   = true
-}
-
 variable "cloudflare_zone_id" {
   description = "Zone ID"
   type        = string
