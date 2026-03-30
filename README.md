@@ -1,5 +1,7 @@
 # zzizily.com
 
+[![OpenTofu](https://github.com/deuxksy/cloudflare-domain-zzizily/actions/workflows/tofu.yml/badge.svg?branch=main)](https://github.com/deuxksy/cloudflare-domain-zzizily/actions/workflows/tofu.yml)
+
 Cloudflare DNS 관리 - OpenTofu + R2 Backend
 
 ## 구조
